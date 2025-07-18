@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="flex flex-col min-h-screen bg-white">
+      <Navbar />
 
-export default App
+      {/* Homepage Skeleton */}
+      <main className="flex-grow">
+        <div className="flex items-center justify-center h-full max-w-6xl px-4 py-20 mx-auto text-center">
+          <div>
+            <h1 className="text-4xl font-bold tracking-tight text-text-dark sm:text-5xl md:text-6xl">
+              Your Digital Health Journey{" "}
+              <span className="text-primary-blue">Starts Here.</span>
+            </h1>
+            <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-600">
+              This is the main content area for your hero section, features,
+              testimonials, etc. We'll build this out in Phase 2.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
