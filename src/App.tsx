@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import FeaturesSection from "./components/FeaturesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           </div>
         </div>
         <FeaturesSection />
+        <TestimonialsSection />
       </main>
 
       <Footer />
