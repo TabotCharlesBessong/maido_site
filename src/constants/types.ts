@@ -6,3 +6,19 @@ export interface Testimonial {
   quote: string;
   rating: number;
 }
+
+export interface PlanPrice {
+  price: number;
+  oldPrice?: number;
+}
+
+export interface PricingPlan {
+  name: string;
+  isPopular: boolean;
+  prices: {
+    monthly: PlanPrice;
+    yearly: PlanPrice;
+  };
+  features: string[];
+  buttons: { text: string; style: "primary" | "secondary" | "ghost" }[];
+}

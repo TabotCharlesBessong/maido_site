@@ -1,4 +1,4 @@
-import type { Testimonial } from "./types";
+import type { PricingPlan, Testimonial } from "./types";
 
 export const testimonialData: Testimonial[] = [
   {
@@ -45,5 +45,62 @@ export const testimonialData: Testimonial[] = [
     quote:
       "Even for a non-technical person like me, getting started with Liva was a breeze. It just works, which is exactly what you want from a healthcare tool.",
     rating: 4.7,
+  },
+];
+
+export const pricingData: PricingPlan[] = [
+  {
+    name: "Basic Plan",
+    isPopular: false,
+    prices: {
+      monthly: { price: 25, oldPrice: 32 },
+      yearly: { price: 250, oldPrice: 320 },
+    },
+    features: [
+      "Secure, encrypted video consultations.",
+      "Appointment scheduling and reminders.",
+      "Patient portal for health records, prescriptions.",
+      "Secure messaging for follow-ups and inquiries.",
+      "HIPAA-compliant data protection.",
+      "Basic support via email.",
+    ],
+    buttons: [{ text: "Get PRO", style: "secondary" }],
+  },
+  {
+    name: "Premium Plan",
+    isPopular: true,
+    prices: {
+      monthly: { price: 45, oldPrice: 56 },
+      yearly: { price: 450, oldPrice: 560 },
+    },
+    features: [
+      "Everything in Basic, plus:",
+      "Prescription management & delivery to pharmacies.",
+      "Integration with EHR systems.",
+      "Appointment types and workflows.",
+      "Multi-device access for patients.",
+      "Priority support via email and phone.",
+    ],
+    buttons: [
+      { text: "Get PRO", style: "primary" },
+      { text: "Free Trial", style: "ghost" },
+    ],
+  },
+  {
+    name: "Enterprise Plan",
+    isPopular: false,
+    prices: {
+      monthly: { price: 160, oldPrice: 180 },
+      yearly: { price: 1600, oldPrice: 1800 },
+    },
+    features: [
+      "Everything in Business, plus:",
+      "Custom API integrations for other healthcare.",
+      "Advanced security features and custom data.",
+      "Custom patient onboarding and tailored workflows.",
+      "Dedicated account manager and training support.",
+      "Telemedicine scalability for large teams.",
+    ],
+    buttons: [{ text: "Get PRO", style: "secondary" }],
   },
 ];
