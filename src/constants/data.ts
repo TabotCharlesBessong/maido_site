@@ -1,4 +1,4 @@
-import type { PricingPlan, Testimonial } from "./types";
+import type { BlogPost, PricingPlan, Testimonial } from "./types";
 
 export const testimonialData: Testimonial[] = [
   {
@@ -102,5 +102,54 @@ export const pricingData: PricingPlan[] = [
       "Telemedicine scalability for large teams.",
     ],
     buttons: [{ text: "Get PRO", style: "secondary" }],
+  },
+];
+
+export const blogData: BlogPost[] = [
+  {
+    id: 1,
+    title: "FAQs For Covid-19 Vaccination",
+    excerpt:
+      "With the drastic rise in Covid-19 cases within the country, there has been a lot of uncertainty revolving around the second strain of the virus as well as...",
+    imageUrl:
+      "https://images.unsplash.com/photo-1618961734760-466979ce35b0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+    author: {
+      name: "Nandini Jain",
+      avatarUrl: "https://i.pravatar.cc/150?img=6",
+    },
+    isFeatured: true,
+  },
+  {
+    id: 2,
+    title: "All You Need To Know About Healthy diet",
+    excerpt: "A healthy diet plan is balanced eating approach that provides...",
+    imageUrl:
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=200",
+    author: { name: "John Doe", avatarUrl: "https://i.pravatar.cc/150?img=7" },
+    isFeatured: false,
+  },
+  {
+    id: 3,
+    title: "Benefits of teleconsultation for Poor",
+    excerpt: "Teleconsultation offers significant benefits for low-income...",
+    imageUrl:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=200",
+    author: {
+      name: "Jane Smith",
+      avatarUrl: "https://i.pravatar.cc/150?img=8",
+    },
+    isFeatured: false,
+  },
+  {
+    id: 4,
+    title: "Technology To Reduce Time On Care",
+    excerpt: "Innovative technology is helping healthcare providers deliver...",
+    imageUrl:
+      "https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=200",
+    author: {
+      name: "Peter Jones",
+      avatarUrl: "https://i.pravatar.cc/150?img=9",
+    },
+    isFeatured: false,
   },
 ];

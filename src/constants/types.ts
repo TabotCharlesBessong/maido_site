@@ -22,3 +22,17 @@ export interface PricingPlan {
   features: string[];
   buttons: { text: string; style: "primary" | "secondary" | "ghost" }[];
 }
+
+export interface Author {
+  name: string;
+  avatarUrl: string;
+}
+
+export interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  imageUrl: string;
+  author: Author;
+  isFeatured: boolean;
+}
