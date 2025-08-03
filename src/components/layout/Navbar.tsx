@@ -20,11 +20,11 @@ const Navbar: React.FC = () => {
 
   const mobileMenuVariants = {
     hidden: { x: "-100%", opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { type: "tween", duration: 0.3 } },
+    visible: { x: 0, opacity: 1, transition: { type: "tween" as const, duration: 0.3 } },
     exit: {
       x: "-100%",
       opacity: 0,
-      transition: { type: "tween", duration: 0.3 },
+      transition: { type: "tween" as const, duration: 0.3 },
     },
   };
 
