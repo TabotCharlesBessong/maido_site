@@ -12,4 +12,14 @@
   .social-link {
     @apply flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-blue-700 transition-colors;
   }
+
+   .form-label {
+    @apply block mb-2 text-sm font-semibold text-gray-700;
+  }
+  .form-input {
+    @apply w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 transition-shadow;
+  }
+  .form-error {
+    @apply mt-1 text-sm text-red-600;
+  }
 }

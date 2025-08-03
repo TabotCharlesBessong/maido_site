@@ -7,6 +7,7 @@ import PricingSection from "./components/pricing/PricingSection";
 import BlogSection from "./components/blog/BlogSection";
 import HeroSection from "./components/HeroSection";
 import HowItWorksSection from "./components/HowItWorks";
+import ContactSection from "./components/contact/Contact";
 
 
 const App: React.FC = () => {
@@ -34,6 +35,7 @@ const App: React.FC = () => {
         <TestimonialsSection />
         <PricingSection />
         <BlogSection />
+        <ContactSection />
       </main>
 
       <Footer />
