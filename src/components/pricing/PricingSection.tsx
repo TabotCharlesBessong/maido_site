@@ -9,7 +9,7 @@ const PricingSection: React.FC = () => {
   const [billingCycle, setBillingCycle] = useState<BillingCycle>("monthly");
 
   return (
-    <section className="py-20 bg-slate-50 sm:py-24">
+    <section id="price" className="py-20 bg-slate-50 sm:py-24">
       <div className="max-w-6xl px-4 mx-auto">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto mb-16 text-center">

@@ -4,11 +4,12 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../common/Logo";
 
 const navLinks = [
-  { title: "Home", href: "#" },
-  { title: "Features", href: "#" },
-  { title: "Pricing", href: "#" },
-  { title: "Blog", href: "#" },
-  { title: "Contact", href: "#" },
+  { title: "Home", href: "#home" },
+  { title: "Features", href: "#features" },
+  { title: "Pricing", href: "#price" },
+  { title: "Blog", href: "#blog" },
+  { title: "Testimonials", href: "#testimonial" },
+  { title: "Contact", href: "#contact" },
 ];
 
 const Navbar: React.FC = () => {

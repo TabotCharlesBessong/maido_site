@@ -8,7 +8,7 @@ const BlogSection: React.FC = () => {
   const otherPosts = blogData.filter((p) => !p.isFeatured);
 
   return (
-    <section className="py-20 bg-slate-50 sm:py-24">
+    <section id="blog" className="py-20 bg-slate-50 sm:py-24">
       <div className="max-w-6xl px-4 mx-auto">
         {/* Section Header */}
         <div className="flex flex-col items-center mb-12 text-center lg:flex-row lg:justify-between lg:text-left">
