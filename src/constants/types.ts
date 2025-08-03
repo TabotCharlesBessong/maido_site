@@ -36,3 +36,11 @@ export interface BlogPost {
   author: Author;
   isFeatured: boolean;
 }
+
+export interface HowItWorksStep {
+  step: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+  isFeatured: boolean;
+}

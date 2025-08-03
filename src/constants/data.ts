@@ -1,4 +1,4 @@
-import type { BlogPost, PricingPlan, Testimonial } from "./types";
+import type { BlogPost, HowItWorksStep, PricingPlan, Testimonial } from "./types";
 
 export const testimonialData: Testimonial[] = [
   {
@@ -150,6 +150,31 @@ export const blogData: BlogPost[] = [
       name: "Peter Jones",
       avatarUrl: "https://i.pravatar.cc/150?img=9",
     },
+    isFeatured: false,
+  },
+];
+
+// Replace image URLs with your actual assets
+export const howItWorksData: HowItWorksStep[] = [
+  {
+    step: 1,
+    title: "Sign Up or Log In",
+    description: "Create a new account or log in to your existing account using a secure, easy-to-navigate portal. Enter your personal and medical information to set up your profile.",
+    imageUrl: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+    isFeatured: false,
+  },
+  {
+    step: 2,
+    title: "Schedule an Appointment",
+    description: "Browse available doctors and select a convenient time for your virtual consultation. You can easily choose the service you need and confirm your appointment in just a few clicks.",
+    imageUrl: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+    isFeatured: true,
+  },
+  {
+    step: 3,
+    title: "Attend Virtual Consultation",
+    description: "Join your video consultation through the app at the scheduled time. Discuss your health concerns with the doctor, get advice, and even receive e-prescriptions, all from the comfort.",
+    imageUrl: "https://images.unsplash.com/photo-1554774853-719586f82d77?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
     isFeatured: false,
   },
 ];

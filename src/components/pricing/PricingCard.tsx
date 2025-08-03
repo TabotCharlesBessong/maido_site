@@ -88,7 +88,7 @@ const PricingCard: React.FC<{
             const primaryStyle =
               "w-full py-3 font-semibold bg-white text-primary-blue rounded-lg shadow hover:bg-slate-100";
             const secondaryStyle =
-              "w-full py-3 font-semibold text-primary-blue bg-white border-2 border-primary-blue rounded-lg hover:bg-primary-blue hover:text-white";
+              "w-full py-3 font-semibold text-blue-600 bg-white border-2 border-primary-blue rounded-lg hover:bg-primary-blue hover:text-white";
             const ghostStyle =
               "w-full py-3 font-semibold text-white bg-primary-blue/50 border-2 border-primary-blue/70 rounded-lg hover:bg-primary-blue/80";
 
