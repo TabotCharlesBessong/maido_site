@@ -5,6 +5,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import PricingSection from "./components/pricing/PricingSection";
 import BlogSection from "./components/blog/BlogSection";
+import HeroSection from "./components/HeroSection";
 
 
 const App: React.FC = () => {
@@ -14,7 +15,7 @@ const App: React.FC = () => {
 
       {/* Homepage Skeleton */}
       <main className="flex-grow">
-        <div className="flex items-center justify-center h-full max-w-6xl px-4 py-20 mx-auto text-center">
+        {/* <div className="flex items-center justify-center h-full max-w-6xl px-4 py-20 mx-auto text-center">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-text-dark sm:text-5xl md:text-6xl">
               Your Digital Health Journey{" "}
@@ -25,7 +26,8 @@ const App: React.FC = () => {
               testimonials, etc. We'll build this out in Phase 2.
             </p>
           </div>
-        </div>
+        </div> */}
+        <HeroSection />
         <FeaturesSection />
         <TestimonialsSection />
         <PricingSection />
