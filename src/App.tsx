@@ -6,6 +6,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import PricingSection from "./components/pricing/PricingSection";
 import BlogSection from "./components/blog/BlogSection";
 import HeroSection from "./components/HeroSection";
+import HowItWorksSection from "./components/HowItWorks";
 
 
 const App: React.FC = () => {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           </div>
         </div> */}
         <HeroSection />
+        <HowItWorksSection />
         <FeaturesSection />
         <TestimonialsSection />
         <PricingSection />
